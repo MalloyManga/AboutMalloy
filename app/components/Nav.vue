@@ -1,18 +1,92 @@
 <!-- Nav.vue -->
 <script setup lang="ts">
+import HomeIcon from '../assets/images/MalloyHead.png'
+import MusicIcon from '../assets/images/JukeBox.png'
+import ContactIcon from '../assets/images/WritaBook.png'
+import ProjectIcon from '../assets/images/WorkBench.webp'
+import AboutIcon from '../assets/images/LightGrayBed.png'
+import RendersIcon from '../assets/images/Painting.png'
 import NavItem from './NavItem.vue'
 
 </script>
 
 <template>
-    <ul class="size-full bg-pink-200 inline-flex flex-col">
-        <li class="flex justify-center items-center bg-green-300 size-[6.25rem]">
-            <NavItem class="size-[5rem]" />
-        </li>
-        <li class="flex justify-center items-center bg-green-300 size-[6.25rem]">2</li>
-        <li class="flex justify-center items-center bg-green-300 size-[6.25rem]">3</li>
-        <li class="flex justify-center items-center bg-green-300 size-[6.25rem]">4</li>
-        <li class="flex justify-center items-center bg-green-300 size-[6.25rem]">5</li>
-    </ul>
+    <nav>
+        <ul class="size-full inline-flex flex-col gap-4 mx-2">
+            <!-- 这里发现 当内部的内容比较多的时间 在搭配 v-for 时 插槽反而是一种更好的办法 -->
+            <li class="flex justify-center items-center size-25">
+                <NuxtLink to="/">
+                    <NavItem class="size-[4rem]">
+                        <template #icon>
+                            <img :src="HomeIcon" alt="HomeIcon">
+                        </template>
+                        <template #text>
+                            Home
+                        </template>
+                    </NavItem>
+                </NuxtLink>
+            </li>
+            <li class="flex justify-center items-center size-[6.25rem]">
+                <NuxtLink to="/">
+                    <NavItem class="size-[3.75rem]">
+                        <template #icon>
+                            <img :src="ProjectIcon" alt="HomeIcon">
+                        </template>
+                        <template #text>
+                            Projects
+                        </template>
+                    </NavItem>
+                </NuxtLink>
+            </li>
+            <li class="flex justify-center items-center size-[6.25rem]">
+                <NuxtLink to="/">
+                    <NavItem class="size-[3.75rem]">
+                        <template #icon>
+                            <img :src="RendersIcon" alt="HomeIcon">
+                        </template>
+                        <template #text>
+                            Renders
+                        </template>
+                    </NavItem>
+                </NuxtLink>
+            </li>
+            <li class="flex justify-center items-center size-[6.25rem]">
+                <NuxtLink to="/">
+                    <NavItem class="size-[3.75rem]">
+                        <template #icon>
+                            <img :src="AboutIcon" alt="HomeIcon">
+                        </template>
+                        <template #text>
+                            About
+                        </template>
+                    </NavItem>
+                </NuxtLink>
+            </li>
+            <li class="flex justify-center items-center size-[6.25rem]">
+                <NuxtLink to="/">
+                    <NavItem class="size-[3.75rem]">
+                        <template #icon>
+                            <img :src="ContactIcon" alt="HomeIcon">
+                        </template>
+                        <template #text>
+                            Contact
+                        </template>
+                    </NavItem>
+                </NuxtLink>
+            </li>
+            <li class="flex justify-center items-center size-[6.25rem]">
+                <NuxtLink to="/">
+                    <NavItem class="size-[3.75rem]">
+                        <template #icon>
+                            <img :src="MusicIcon" alt="HomeIcon">
+                        </template>
+                        <template #text>
+                            Music
+                        </template>
+                    </NavItem>
+                </NuxtLink>
+            </li>
+        </ul>
+    </nav>
 
 </template>
