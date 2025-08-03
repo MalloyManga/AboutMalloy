@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MC";
+  src: url("/assets/fonts/Monocraft.ttc") format("collection");
+  font-style: normal;
 }
