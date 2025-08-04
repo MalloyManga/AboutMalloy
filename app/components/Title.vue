@@ -21,7 +21,7 @@ const titleContent = computed(() => {
 </script>
 
 <template>
-    <div class="title inline-block text-4xl p-2 text-white m-4 font-bold drop-shadow-[0.25rem_0.25rem_#89AFFD]">
+    <div class="title inline-block text-5xl p-2 text-white m-4 font-bold drop-shadow-[0.25rem_0.25rem_#89AFFD]">
         {{ titleContent }}
     </div>
 
