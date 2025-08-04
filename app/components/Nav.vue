@@ -63,7 +63,7 @@ import NavItem from './NavItem.vue'
                 </NuxtLink>
             </li>
             <li class="flex justify-center items-center size-[6.25rem]">
-                <NuxtLink to="/">
+                <NuxtLink to="/Contact">
                     <NavItem class="size-[3.75rem]">
                         <template #icon>
                             <img :src="ContactIcon" alt="HomeIcon">
