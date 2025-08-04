@@ -27,7 +27,7 @@ import NavItem from './NavItem.vue'
                 </NuxtLink>
             </li>
             <li class="flex justify-center items-center size-[6.25rem]">
-                <NuxtLink to="/">
+                <NuxtLink to="/projects">
                     <NavItem class="size-[3.75rem]">
                         <template #icon>
                             <img :src="ProjectIcon" alt="HomeIcon">
@@ -39,7 +39,7 @@ import NavItem from './NavItem.vue'
                 </NuxtLink>
             </li>
             <li class="flex justify-center items-center size-[6.25rem]">
-                <NuxtLink to="/">
+                <NuxtLink to="/renders">
                     <NavItem class="size-[3.75rem]">
                         <template #icon>
                             <img :src="RendersIcon" alt="HomeIcon">
@@ -51,7 +51,7 @@ import NavItem from './NavItem.vue'
                 </NuxtLink>
             </li>
             <li class="flex justify-center items-center size-[6.25rem]">
-                <NuxtLink to="/">
+                <NuxtLink to="/about">
                     <NavItem class="size-[3.75rem]">
                         <template #icon>
                             <img :src="AboutIcon" alt="HomeIcon">
@@ -75,7 +75,7 @@ import NavItem from './NavItem.vue'
                 </NuxtLink>
             </li>
             <li class="flex justify-center items-center size-[6.25rem]">
-                <NuxtLink to="/">
+                <NuxtLink to="/music">
                     <NavItem class="size-[3.75rem]">
                         <template #icon>
                             <img :src="MusicIcon" alt="HomeIcon">
