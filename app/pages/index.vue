@@ -10,6 +10,6 @@
     <!-- <Now /> -->
     <Intro />
     <Now />
-
+    <Recent />
 
 </template>

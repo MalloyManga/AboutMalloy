@@ -6,11 +6,13 @@ import Melon from '../assets/images/Melon.png'
 </script>
 
 <template>
-    <div class="mc-text absolute top-15 left-170 border-4 w-lg h-48 bg-[#5371ad] p-4 text-white">
-        <img :src="SignIcon" alt="Now" class="size-12 inline-block">
-        <span class="text-2xl">
-            Now
-        </span>
+    <div class="mc-text absolute top-15 left-165 border-4 w-lg h-48 bg-[#5371ad] p-4 text-white">
+        <div class="flex gap-4 items-center">
+            <img :src="SignIcon" alt="Now" class="size-10 inline-block">
+            <span class="text-2xl">
+                Now
+            </span>
+        </div>
         <div class="ml-12 mt-2 flex gap-2 items-start">
             <img :src="Melon" alt="summer" class="size-8 inline-block">
             <!-- <span>
