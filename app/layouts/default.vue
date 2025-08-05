@@ -9,7 +9,7 @@ import Title from '~/components/Title.vue'
 
 <template>
     <div
-        class="body bg-cover bg-center bg-no-repeat bg-fixed min-h-screen w-[100vw] grid grid-cols-[6.25rem_1fr] gap-4">
+        class="body bg-cover bg-center bg-no-repeat bg-fixed min-h-screen min-w-screen grid grid-cols-[6.25rem_1fr] gap-4">
         <header class="inline-block size-full">
             <Nav />
         </header>

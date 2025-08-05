@@ -9,3 +9,7 @@
   src: url("/assets/fonts/Monocraft.ttc") format("collection");
   font-style: normal;
 }
+
+body {
+  overflow: hidden;
+}
