@@ -3,30 +3,32 @@
 import MePic from './MePic.vue'
 import TechStack from './TechStack.vue'
 import Manga from './Manga.vue'
+import NameTag from '../assets/images/NameTag.png'
 
 </script>
 
 <template>
     <!-- 怎么全是div？ -->
-        <div
-            class="mc-text border-4 w-md h-140 absolute top-32 left-40 bg-[#5371ad] p-4 grid grid-cols-[1fr_7.5rem] grid-rows-[7.5rem_1fr] text-white">
-            <div class="text-lg flex flex-col justify-center">
-                <div class="">
-                    Hi, I'm Malloy
-                </div>
-                <div class="mt-2">
-                    A 18yo front-end novice, loves Web, MC & manga
-                </div>
+    <div
+        class="mc-text border-4 w-md h-140 absolute top-32 left-40 bg-[#5371ad] p-4 grid grid-cols-[1fr_7.5rem] grid-rows-[7.5rem_1fr] text-white">
+        <div class="text-lg flex flex-col justify-center">
+            <div class="">
+                <img :src="NameTag" alt="Me" class="size-8 inline-block">
+                Hi, I'm Malloy
             </div>
-            <MePic />
-            <div>
-                <TechStack />
-            </div>
-            <div class="col-start-1 col-end-3">
-                <!-- 这里我只是 指定了 col 但是 row 没指定 所以会出现第三行的情况 -->
-                <Manga />
+            <div class="mt-2">
+                A 18yo front-end novice, loves Web, MC & manga
             </div>
         </div>
+        <MePic />
+        <div>
+            <TechStack />
+        </div>
+        <div class="col-start-1 col-end-3">
+            <!-- 这里我只是 指定了 col 但是 row 没指定 所以会出现第三行的情况 -->
+            <Manga />
+        </div>
+    </div>
 
 
 </template>
