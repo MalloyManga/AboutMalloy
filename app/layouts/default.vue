@@ -13,7 +13,7 @@ import Title from '~/components/Title.vue'
         <header class="inline-block size-full">
             <Nav />
         </header>
-        <main class="size-full border-1">
+        <main class="size-full">
             <Title />
             <!-- 这里的内容 -->
             <NuxtPage />
