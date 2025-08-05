@@ -8,9 +8,8 @@ import Manga from './Manga.vue'
 
 <template>
     <!-- 怎么全是div？ -->
-    <div class="foo">
         <div
-            class="mc-text border-4 border-amber-300 w-md h-140 absolute top-32 left-40 size-full bg-[#5371ad] p-4 grid grid-cols-[1fr_7.5rem] grid-rows-[7.5rem_1fr] text-white">
+            class="mc-text border-4 w-md h-140 absolute top-32 left-40 bg-[#5371ad] p-4 grid grid-cols-[1fr_7.5rem] grid-rows-[7.5rem_1fr] text-white">
             <div class="text-lg flex flex-col justify-center">
                 <div class="">
                     Hi, I'm Malloy
@@ -28,7 +27,6 @@ import Manga from './Manga.vue'
                 <Manga />
             </div>
         </div>
-    </div>
 
 
 </template>
@@ -52,9 +50,5 @@ import Manga from './Manga.vue'
             100% 4px, calc(100% - 2px) 4px,
             calc(100% - 2px) 2px, calc(100% - 4px) 2px,
             calc(100% - 4px) 0px);
-    /* mask: linear-gradient(to bottom, black 26%, transparent 26%, transparent 98%, black 98%),
-        linear-gradient(to right, black 3%, transparent 3%, transparent 97%,black 97%);
-    mask-composite: add; */
-    /* 这个是干啥的？ */
 }
 </style>
