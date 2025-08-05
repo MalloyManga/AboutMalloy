@@ -52,9 +52,9 @@ import Manga from './Manga.vue'
             100% 4px, calc(100% - 2px) 4px,
             calc(100% - 2px) 2px, calc(100% - 4px) 2px,
             calc(100% - 4px) 0px);
-    mask: linear-gradient(to bottom, black 26%, transparent 26%, transparent 98%, black 98%),
+    /* mask: linear-gradient(to bottom, black 26%, transparent 26%, transparent 98%, black 98%),
         linear-gradient(to right, black 3%, transparent 3%, transparent 97%,black 97%);
-    mask-composite: add;
+    mask-composite: add; */
     /* 这个是干啥的？ */
 }
 </style>
