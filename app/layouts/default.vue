@@ -24,6 +24,6 @@ import Title from '~/components/Title.vue'
 
 <style scoped>
 .body {
-    background-image: url('../assets/images/EndlessDream.png');
+    background-image: url('../assets/images/EndlessDream.webp');
 }
 </style>

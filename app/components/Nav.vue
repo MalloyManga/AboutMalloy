@@ -1,11 +1,11 @@
 <!-- Nav.vue -->
 <script setup lang="ts">
-import HomeIcon from '../assets/images/MalloyHead.png'
-import MusicIcon from '../assets/images/JukeBox.png'
-import ContactIcon from '../assets/images/WritaBook.png'
+import HomeIcon from '../assets/images/MalloyHead.webp'
+import MusicIcon from '../assets/images/JukeBox.webp'
+import ContactIcon from '../assets/images/WritaBook.webp'
 import ProjectIcon from '../assets/images/WorkBench.webp'
-import AboutIcon from '../assets/images/LightGrayBed.png'
-import RendersIcon from '../assets/images/Painting.png'
+import AboutIcon from '../assets/images/LightGrayBed.webp'
+import RendersIcon from '../assets/images/Painting.webp'
 import NavItem from './NavItem.vue'
 
 </script>

@@ -1,6 +1,6 @@
 <!-- components/MePic.vue -->
 <script setup lang="ts">
-import Me from '../assets/images/Malloy.png'
+import Me from '../assets/images/Malloy.webp'
 
 
 </script>

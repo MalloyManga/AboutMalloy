@@ -1,7 +1,7 @@
 <!-- components/Now.vue -->
 <script setup lang="ts">
-import SignIcon from '../assets/images/Sign.png'
-import Melon from '../assets/images/Melon.png'
+import SignIcon from '../assets/images/Sign.webp'
+import Melon from '../assets/images/Melon.webp'
 
 </script>
 

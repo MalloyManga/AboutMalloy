@@ -3,7 +3,7 @@
 import MePic from './MePic.vue'
 import TechStack from './TechStack.vue'
 import Manga from './Manga.vue'
-import NameTag from '../assets/images/NameTag.png'
+import NameTag from '../assets/images/NameTag.webp'
 
 </script>
 

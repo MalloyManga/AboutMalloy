@@ -1,6 +1,6 @@
 <!-- components/McItemBar.vue -->
 <script setup lang="ts">
-import ItemBox from '../assets/images/McItem.png'
+import ItemBox from '../assets/images/McItem.webp'
 
 
 </script>

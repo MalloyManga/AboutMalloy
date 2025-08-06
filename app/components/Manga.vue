@@ -1,7 +1,7 @@
 <!-- components/Manga.vue -->
 <script setup lang="ts">
-import FoolNight from '../assets/images/FoolNight.jpeg'
-import Frieren from '../assets/images/Frieren.jpg'
+import FoolNight from '../assets/images/FoolNight.webp'
+import Frieren from '../assets/images/Frieren.webp'
 
 
 </script>
