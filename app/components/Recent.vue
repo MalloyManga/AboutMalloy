@@ -10,8 +10,9 @@ interface RecentActivity {
 }
 
 const recentActivities: RecentActivity[] = [
-    { time: '2025/08/05', activity: 'MC render "EndlessDream"', nuxtLink: '/about' },
-    { time: '2025/7/15', activity: 'Launch a costum-component-library', link: 'https://malloymanga.github.io/Custom-component-library/' }
+    { time: '2025/08/05', activity: 'MC render "Endless Dream"', nuxtLink: '/renders' },
+    { time: '2025/7/30', activity: 'Mc render "Nine of Swords"', nuxtLink: '/renders' },
+    { time: '2025/7/15', activity: 'Launch a costum-component-library', link: 'https://malloymanga.github.io/Custom-component-library/' },
 ]
 
 </script>
