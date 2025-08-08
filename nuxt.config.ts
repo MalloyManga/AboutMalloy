@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     ],
   },
   app: {
-    baseURL: '/AboutMalloy/'
+    baseURL: '/AboutMalloy/',
+    head: {
+      link: [
+        { rel: 'icon', href: '/AboutMalloy/favicon.ico' }
+      ],
+    }
   }
 })
