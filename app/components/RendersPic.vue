@@ -1,6 +1,6 @@
 <!-- components/RendersPic.vue -->
 <script setup lang="ts">
-import Lantern from '../assets/images/Lantern.webp'
+import Lantern from '../assets/images/Lanter.webp'
 import EndlessDream from '../assets/images/EndlessDream.webp'
 
 const tabs = useTemplateRef<HTMLDivElement[]>('tabs')
