@@ -13,19 +13,20 @@ const recentActivities: RecentActivity[] = [
     { time: '2025/08/05', activity: 'MC render "Endless Dream"', nuxtLink: '/renders' },
     { time: '2025/7/30', activity: 'Mc render "Nine of Swords"', nuxtLink: '/renders' },
     { time: '2025/7/15', activity: 'Launch a costum-component-library', link: 'https://malloymanga.github.io/Custom-component-library/' },
+
 ]
 
 </script>
 
 <template>
-    <div class="mc-text border-4 size-full bg-[#5371ad] p-4 text-white flex flex-col ">
+    <div class="mc-text size-full border-4 bg-[#5371ad] p-4 text-white flex flex-col">
         <div class="flex gap-4 items-center mb-4">
             <img :src="Clock" alt="recent" class="inline-block size-10">
             <span class="text-2xl">
                 Recent Activity
             </span>
         </div>
-        <ul class="grid gap-3 overflow-auto">
+        <ul class="grid gap-3 max-h-[40vh] overflow-auto py-1">
             <li v-for="(item, index) in recentActivities" :key="index"
                 class="recent-item bg-[#608bc1] h-fit py-1 px-2 cursor-pointer hover:bg-[#2a5298]">
                 <a v-if="item.link" :href="item.link" class="flex flex-col" target="_blank">
