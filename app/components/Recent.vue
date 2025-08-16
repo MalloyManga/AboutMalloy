@@ -18,16 +18,16 @@ const recentActivities: RecentActivity[] = [
 </script>
 
 <template>
-    <div class="mc-text absolute top-80 left-170 border-4 w-lg h-120 bg-[#5371ad] p-4 text-white flex flex-col ">
+    <div class="mc-text border-4 size-full bg-[#5371ad] p-4 text-white flex flex-col ">
         <div class="flex gap-4 items-center mb-4">
             <img :src="Clock" alt="recent" class="inline-block size-10">
             <span class="text-2xl">
                 Recent Activity
             </span>
         </div>
-        <ul class="grid gap-3">
+        <ul class="grid gap-3 overflow-auto">
             <li v-for="(item, index) in recentActivities" :key="index"
-                class="recent-item bg-[#608bc1] h-16 py-1 px-2 cursor-pointer hover:bg-[#2a5298]">
+                class="recent-item bg-[#608bc1] h-fit py-1 px-2 cursor-pointer hover:bg-[#2a5298]">
                 <a v-if="item.link" :href="item.link" class="flex flex-col" target="_blank">
                     <span class="bg-[#2a5298] size-fit px-1 my-1">
                         {{ item.time }}

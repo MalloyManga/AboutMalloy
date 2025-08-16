@@ -6,7 +6,7 @@ import Melon from '../assets/images/Melon.webp'
 </script>
 
 <template>
-    <div class="mc-text absolute top-15 left-165 border-4 w-lg h-48 bg-[#5371ad] p-4 text-white">
+    <div class="mc-text w-full h-full border-4 bg-[#5371ad] p-4 text-white">
         <div class="flex gap-4 items-center">
             <img :src="SignIcon" alt="Now" class="size-10 inline-block">
             <span class="text-2xl">
