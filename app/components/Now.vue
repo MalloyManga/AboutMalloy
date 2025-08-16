@@ -15,9 +15,6 @@ import Melon from '../assets/images/Melon.webp'
         </div>
         <div class="ml-12 mt-2 flex gap-2 items-start">
             <img :src="Melon" alt="summer" class="size-8 inline-block">
-            <!-- <span>
-                    Enjoy summer!
-            </span> -->
             <ul class="inline-flex flex-col gap-2 mt-1">
                 <li>
                     Enjoy summer!

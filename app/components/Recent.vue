@@ -73,18 +73,6 @@ const recentActivities: RecentActivity[] = [
 }
 
 .recent-item {
-    /* clip-path: polygon(4px 0px, 4px 2px,
-            2px 2px, 2px 4px,
-            0px 4px, 0px calc(100% - 4px),
-            2px calc(100% - 4px), 2px calc(100% - 2px),
-            4px calc(100% - 2px), 4px 100%,
-            calc(100% - 4px) 100%, calc(100% - 4px) calc(100% - 2px),
-            calc(100% - 2px) calc(100% - 2px),
-            calc(100% - 2px) calc(100% - 4px),
-            100% calc(100% - 4px), 100% calc(100% - 4px),
-            100% 4px, calc(100% - 2px) 4px,
-            calc(100% - 2px) 2px, calc(100% - 4px) 2px,
-            calc(100% - 4px) 0px); */
     box-shadow: 0 -4px #2a5298 inset,
         -4px 0 #2a5298 inset,
         0 4px #cdefff inset,
