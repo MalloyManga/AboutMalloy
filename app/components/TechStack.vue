@@ -13,6 +13,14 @@ import Ts from './icon/Ts.vue'
 import VueDark from './icon/VueDark.vue'
 import VueLight from './icon/VueLight.vue'
 
+const techStacks = [
+    { stack: Ts },
+    { stack: TailwindDark },
+    { stack: VueDark },
+    { stack: NuxtDark },
+    { stack: ReactDark },
+    { stack: NodejsDark },
+]
 
 </script>
 
@@ -21,34 +29,9 @@ import VueLight from './icon/VueLight.vue'
         Tech stack
     </div>
     <div class="flex flex-wrap select-none">
-        <McItemBar>
+        <McItemBar v-for="techStack in techStacks">
             <template #item>
-                <Ts class="size-9" />
-            </template>
-        </McItemBar>
-        <McItemBar>
-            <template #item>
-                <TailwindDark class="size-9" />
-            </template>
-        </McItemBar>
-        <McItemBar>
-            <template #item>
-                <VueDark class="size-9" />
-            </template>
-        </McItemBar>
-        <McItemBar>
-            <template #item>
-                <NuxtDark class="size-9" />
-            </template>
-        </McItemBar>
-        <McItemBar>
-            <template #item>
-                <ReactDark class="size-9" />
-            </template>
-        </McItemBar>
-        <McItemBar>
-            <template #item>
-                <NodejsDark class="size-9" />
+                <component :is="techStack.stack" class="size-9" />
             </template>
         </McItemBar>
     </div>
