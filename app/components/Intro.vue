@@ -8,11 +8,10 @@ import NameTag from '../assets/images/NameTag.webp'
 </script>
 
 <template>
-    <div
-        class="mc-text border-4 size-full bg-[#5371ad] p-4 grid grid-cols-[1fr_7.5rem] text-white">
-        <div class="text-lg flex flex-col justify-center">
+    <div class="mc-text border-4 size-full bg-[#5371ad] p-4 grid grid-cols-[1fr_7.5rem] text-white">
+        <div class="bg-pink-30 text-lg flex flex-col">
             <div>
-                <img :src="NameTag" alt="Malloy" class="size-8 inline-block">
+                <img :src="NameTag" alt="Malloy" class="mc-icon size-8 inline-block">
                 Hi, I'm Malloy
             </div>
             <div class="mt-2">
@@ -23,7 +22,7 @@ import NameTag from '../assets/images/NameTag.webp'
         <div class="self-center col-start-1 col-end-3">
             <TechStack />
         </div>
-        <div class="col-start-1 col-end-3">
+        <div class="col-start-1 col-end-3 self-end">
             <Manga />
         </div>
     </div>

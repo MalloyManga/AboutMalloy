@@ -8,7 +8,7 @@ import Melon from '../assets/images/Melon.webp'
 <template>
     <div class="mc-text w-full h-full border-4 bg-[#5371ad] p-4 text-white">
         <div class="flex gap-4 items-center">
-            <img :src="SignIcon" alt="Now" class="size-10 inline-block">
+            <img :src="SignIcon" alt="Now" class="mc-icon size-10 inline-block">
             <span class="text-2xl">
                 Now
             </span>

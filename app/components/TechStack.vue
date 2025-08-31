@@ -20,7 +20,7 @@ import VueLight from './icon/VueLight.vue'
     <div class="text-2xl mb-2">
         Tech stack
     </div>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap select-none">
         <McItemBar>
             <template #item>
                 <Ts class="size-9" />

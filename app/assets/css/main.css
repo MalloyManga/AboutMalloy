@@ -13,3 +13,7 @@
 body {
   overflow: hidden;
 }
+
+.mc-icon {
+  user-select: none;
+}

@@ -3,17 +3,13 @@
 import FoolNight from '../assets/images/FoolNight.webp'
 import Frieren from '../assets/images/Frieren.webp'
 
-
 </script>
 
 <template>
     <span class="text-lg">
         Manga I'm into lately
     </span>
-    <div class="h-36 flex overflow-hidden">
-        <!-- <a href="https://bigcomics.jp/series/4a917e09503ce/" class="">
-        </a> -->
-        <!-- 这里为何加上了 flex 布局之后 -->
+    <div class="h-36 flex overflow-hidden select-none">
         <a href="https://bigcomics.jp/series/4a917e09503ce/" class="flex" target="_blank">
             <img :src="FoolNight" alt="FoolNight">
         </a>
