@@ -17,10 +17,10 @@ import Melon from '../assets/images/Melon.webp'
             <img :src="Melon" alt="summer" class="size-8 inline-block">
             <ul class="inline-flex flex-col gap-2 mt-1">
                 <li>
-                    Enjoy summer!
+                    > Working on a project named EasyTailwind,a tool that helps Tailwind users save time
                 </li>
                 <li>
-                    Learn back-end
+                    > Learning back-end
                 </li>
             </ul>
         </div>
