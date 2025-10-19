@@ -6,47 +6,41 @@ import Melon from '../assets/images/Melon.webp'
 </script>
 
 <template>
-    <div class="mc-text w-full h-full border-4 bg-[#5371ad] p-4 text-white">
-        <div class="flex gap-4 items-center">
-            <img :src="SignIcon" alt="Now" class="mc-icon size-10 inline-block">
-            <span class="text-2xl px-1 bg-[#2A5298] inline-block">
-                Now
-            </span>
-        </div>
-        <div class="ml-12 mt-2 flex gap-2 items-start">
-            <img :src="Melon" alt="summer" class="size-8 inline-block">
-            <ul class="inline-flex flex-col gap-2 mt-1">
-                <li>
-                    > Working on a project named EasyTailwind,a tool that helps Tailwind users save time
-                </li>
-                <li>
-                    > Learning back-end
-                </li>
-            </ul>
+    <div class="back_board size-full bg-[#3A4F7F]">
+        <div class="mc-text w-full h-[99%] border-4 bg-[#5371ad] p-4 text-white">
+            <div class="flex gap-4 items-center">
+                <img :src="SignIcon" alt="Now" class="mc-icon size-10 inline-block">
+                <span class="text-2xl px-1 bg-[#2A5298] inline-block">
+                    Now
+                </span>
+            </div>
+            <div class="ml-12 mt-2 flex gap-2 items-start">
+                <img :src="Melon" alt="summer" class="size-8 inline-block">
+                <ul class="inline-flex flex-col gap-2 mt-1">
+                    <li>
+                        > Working on a project named EasyTailwind,a tool that helps Tailwind users save time
+                    </li>
+                    <li>
+                        > Learning back-end
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
-
 </template>
 
 <style scoped>
 .mc-text {
     font-family: 'MC';
-    border-image: url(../assets/images/PixelBorder.svg) 2;
-    box-shadow: 0 -4px rgb(12 24 44 / 50%) inset,
+    /* box-shadow: 0 -4px rgb(12 24 44 / 50%) inset,
         0 4px rgb(255 255 255 / 25%) inset, -4px 0 rgb(12 24 44 / 50%) inset,
-        4px 0 rgb(255 255 255 / 25%) inset;
-    clip-path: polygon(4px 0px, 4px 2px,
-            2px 2px, 2px 4px,
-            0px 4px, 0px calc(100% - 4px),
-            2px calc(100% - 4px), 2px calc(100% - 2px),
-            4px calc(100% - 2px), 4px 100%,
-            calc(100% - 4px) 100%, calc(100% - 4px) calc(100% - 2px),
-            calc(100% - 2px) calc(100% - 2px),
-            calc(100% - 2px) calc(100% - 4px),
-            100% calc(100% - 4px), 100% calc(100% - 4px),
-            100% 4px, calc(100% - 2px) 4px,
-            calc(100% - 2px) 2px, calc(100% - 4px) 2px,
-            calc(100% - 4px) 0px);
+        4px 0 rgb(255 255 255 / 25%) inset; */
+    border-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1310_2574)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0H3V1H2V2H1V3H0V4V5H1V6H2V7H3V8H4H5V7H6V6H7V5H8V4V3H7V2H6V1H5V0H4ZM5 1V2H6V3H7V4V5H6V6H5V7H4H3V6H2V5H1V4V3H2V2H3V1H4H5Z' fill='%23475569'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1310_2574'%3E%3Crect width='8' height='8' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") 3 / 6px / 0px stretch;
+    clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
+}
+
+.back_board {
+    border-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1310_2574)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0H3V1H2V2H1V3H0V4V5H1V6H2V7H3V8H4H5V7H6V6H7V5H8V4V3H7V2H6V1H5V0H4ZM5 1V2H6V3H7V4V5H6V6H5V7H4H3V6H2V5H1V4V3H2V2H3V1H4H5Z' fill='%23475569'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1310_2574'%3E%3Crect width='8' height='8' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") 3 / 6px / 0px stretch;
+    clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
 }
 </style>
