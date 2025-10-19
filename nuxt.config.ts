@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   ssr: false,
   vite: {
+    build: {
+      assetsInlineLimit: 8192,
+    },
     plugins: [
       tailwindcss(),
     ],
