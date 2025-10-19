@@ -6,7 +6,7 @@ import Frieren from '../assets/images/Frieren.webp'
 </script>
 
 <template>
-    <span class="text-lg">
+    <span class="text-lg mb-2 px-1 bg-[#2A5298] inline-block">
         Manga I'm into lately
     </span>
     <div class="h-36 flex overflow-hidden select-none">

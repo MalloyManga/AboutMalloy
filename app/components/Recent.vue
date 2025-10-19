@@ -22,7 +22,7 @@ const recentActivities: RecentActivity[] = [
     <div class="mc-text size-full border-4 bg-[#5371ad] p-4 text-white flex flex-col">
         <div class="flex gap-4 items-center mb-4">
             <img :src="Clock" alt="recent" class="mc-icon inline-block size-10">
-            <span class="text-2xl">
+            <span class="text-2xl px-1 bg-[#2A5298] inline-block">
                 Recent Activity
             </span>
         </div>

@@ -34,7 +34,7 @@ const techStacks: TechStack[] = [
 </script>
 
 <template>
-    <div class="text-2xl mb-2">
+    <div class="text-2xl mb-2 px-1 bg-[#2A5298] inline-block">
         Tech stack
     </div>
     <div class="flex flex-wrap select-none">
