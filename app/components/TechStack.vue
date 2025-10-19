@@ -12,14 +12,23 @@ import TailwindLight from './icon/TailwindLight.vue'
 import Ts from './icon/Ts.vue'
 import VueDark from './icon/VueDark.vue'
 import VueLight from './icon/VueLight.vue'
+import ExpressDark from './icon/ExpressDark.vue'
+import NestDark from './icon/NestDark.vue'
 
-const techStacks = [
-    { stack: Ts },
-    { stack: TailwindDark },
-    { stack: VueDark },
-    { stack: NuxtDark },
-    { stack: ReactDark },
-    { stack: NodejsDark },
+interface TechStack {
+    stack: Component,
+    link: string
+}
+
+const techStacks: TechStack[] = [
+    { stack: Ts, link: 'https://www.typescriptlang.org/' },
+    { stack: TailwindDark, link: 'https://tailwindcss.com/' },
+    { stack: VueDark, link: 'https://vuejs.org/' },
+    { stack: NuxtDark, link: 'https://nuxt.com/' },
+    { stack: ReactDark, link: 'https://react.dev/' },
+    { stack: NodejsDark, link: 'https://nodejs.org/' },
+    { stack: NestDark, link: 'https://nestjs.com/' },
+    { stack: ExpressDark, link: 'https://expressjs.com/' }
 ]
 
 </script>
@@ -31,7 +40,9 @@ const techStacks = [
     <div class="flex flex-wrap select-none">
         <McItemBar v-for="techStack in techStacks">
             <template #item>
-                <component :is="techStack.stack" class="size-9" />
+                <a :href="techStack.link" target="_blank">
+                    <component :is="techStack.stack" class="size-9" />
+                </a>
             </template>
         </McItemBar>
     </div>
