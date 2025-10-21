@@ -6,8 +6,7 @@ import Title from '~/components/Title.vue'
 </script>
 
 <template>
-    <div id="foo"
-        class="body bg-cover bg-center bg-no-repeat bg-fixed grid grid-cols-[6.25rem_1fr] gap-4 h-screen w-screen">
+    <div class="body bg-cover bg-center bg-no-repeat bg-fixed grid grid-cols-[6.25rem_1fr] gap-4 h-screen w-screen">
         <header class="inline-block size-full">
             <Nav />
         </header>
