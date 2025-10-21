@@ -8,8 +8,8 @@ import NameTag from '../assets/images/NameTag.webp'
 </script>
 
 <template>
-    <div class="back_board size-full bg-[#3A4F7F]">
-        <div class="mc-text border-4 w-full h-[99%] bg-[#5371ad] p-4 grid grid-cols-[1fr_7.5rem] text-white">
+    <div class="back_board size-full pb-2 bg-[#3A4F7F]">
+        <div class="mc-text border-4 size-full bg-[#5371ad] p-4 grid grid-cols-[1fr_7.5rem] text-white">
             <div class="bg-pink-30 text-lg flex flex-col">
                 <div>
                     <img :src="NameTag" alt="Malloy" class="mc-icon size-8 inline-block">
