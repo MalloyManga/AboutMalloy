@@ -29,7 +29,8 @@ watch(discordText, () => {
                     </span>
                 </div>
                 <div class="text-lg px-1 mb-4">
-                    Feel free to contact me if you need.
+                    Whether it's about code, Minecraft, or just something interesting —
+                    you're always welcome to drop by and say hi :)
                     <!-- <a href="#" class="underline underline-offset-2">
                     (e.com)
                 </a> -->
