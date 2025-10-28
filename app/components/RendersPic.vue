@@ -5,8 +5,6 @@ import IronSword from '../assets/images/IronSword.webp'
 import EndlessDream from '../assets/images/EndlessDream.webp'
 import NineOfSwords from '../assets/images/NineOfSwords.webp'
 
-const tabs = useTemplateRef<HTMLDivElement[]>('tabs')
-const lastIndex = ref<number>()
 interface Renders {
     img: string
     title: string
@@ -16,26 +14,16 @@ const renders: Renders[] = [
     { img: EndlessDream, title: 'Endless Dream', icon: Lantern },
     { img: NineOfSwords, title: 'Nine of Swords', icon: IronSword },
 ]
-const currentTitle = ref(renders[0]?.title)
-const currentImg = ref(renders[0]?.img)
+
+const activeIndex = ref(0)
+
+const currentRender = computed(() => renders[activeIndex.value])
+const currentTitle = computed(() => currentRender.value?.title)
+const currentImg = computed(() => currentRender.value?.img)
 
 const handleActive = (index: number) => {
-    if (tabs.value && tabs.value[index]) {
-        currentTitle.value = renders[index]?.title
-        currentImg.value = renders[index]?.img
-        tabs.value[index].style.backgroundColor = '#2a5298'
-        tabs.value[index].style.boxShadow = "0 -3px #608bc1 inset,-3px 0px #608bc1 inset,-3px 0 #133e87,0 -3px #133e87,3px 0 #133e87,0 3px #133e87"
-        lastIndex.value = index
-    }
+    activeIndex.value = index
 }
-watch(lastIndex, (newVal, oldVal) => {
-    if (oldVal !== undefined) {
-        if (tabs.value && tabs.value[oldVal]) {
-            tabs.value[oldVal].style.backgroundColor = ''
-            tabs.value[oldVal].style.boxShadow = ''
-        }
-    }
-})
 
 onMounted(() => {
     handleActive(0)
@@ -49,7 +37,8 @@ onMounted(() => {
             <div class="flex gap-2 size-full">
                 <div class="flex flex-col gap-2">
                     <div ref="tabs" v-for="(renderPic, index) in renders" @mousedown="() => { handleActive(index) }"
-                        class="nav-page bg-[#608BC1] size-8 flex justify-center items-center active:bg-[#2a5298] select-none">
+                        class="nav-page bg-[#608BC1] size-8 flex justify-center items-center active:bg-[#2a5298] select-none"
+                        :class="{ 'active': index === activeIndex }">
                         <img :src="renderPic.icon" alt="Lantern" class="size-7 select-none">
                     </div>
                 </div>
@@ -74,5 +63,10 @@ onMounted(() => {
         0 -3px #133e87,
         3px 0 #133e87,
         0 3px #133e87;
+}
+
+.nav-page.active {
+    background-color: #2a5298;
+    box-shadow: 0 -3px #608bc1 inset, -3px 0px #608bc1 inset, -3px 0 #133e87, 0 -3px #133e87, 3px 0 #133e87, 0 3px #133e87;
 }
 </style>
