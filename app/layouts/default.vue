@@ -4,13 +4,10 @@ import Title from '~/components/Title.vue'
 import McItemBar from '~/components/McItemBar.vue'
 import DiamondPickaxe from '../assets/images/DiamondPickaxe.webp'
 
-const isPickaxeCursorActive = ref(false)
+const { isPickaxeCursorActive, setIsPickaxeCursorActive } = usePickaxeStage()
 const cursorX = ref(0)
 const cursorY = ref(0)
 
-function togglePickaxeCursor() {
-    isPickaxeCursorActive.value = !isPickaxeCursorActive.value
-}
 
 function updateCursorPosition(event: MouseEvent) {
     cursorX.value = event.clientX
@@ -36,7 +33,7 @@ watch(isPickaxeCursorActive, (isActive) => {
 
         <header class="flex flex-col justify-between size-full">
             <Nav />
-            <McItemBar @click="togglePickaxeCursor" class="cursor-pointer size-fit">
+            <McItemBar @click="setIsPickaxeCursorActive" class="cursor-pointer size-fit">
                 <template #item>
                     <img v-if="!isPickaxeCursorActive" :src="DiamondPickaxe" alt="DiamondPickaxe" class="size-9">
                 </template>
