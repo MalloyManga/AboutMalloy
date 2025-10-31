@@ -26,13 +26,15 @@ function handleCardClick(cardName: 'intro' | 'now' | 'recent') {
             <Intro />
             <DestroyOverlay :stage="cardStages.intro" />
         </div>
-        <div class="lg:relative lg:pl-12" @click="handleCardClick('now')">
+        <div class="lg:relative lg:pl-12" @click="handleCardClick('now')"
+            :class="{ 'opacity-0': cardStages.intro > 10 }">
             <div class="size-full lg:absolute relative lg:-top-16">
                 <Now />
                 <DestroyOverlay :stage="cardStages.now" />
             </div>
         </div>
-        <div class="relative lg:pl-8" @click="handleCardClick('recent')">
+        <div class="relative lg:pl-8" @click="handleCardClick('recent')"
+            :class="{ 'opacity-0': cardStages.intro > 10 }">
             <div class="size-full relative">
                 <Recent />
                 <DestroyOverlay :stage="cardStages.recent" />
