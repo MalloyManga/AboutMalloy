@@ -56,4 +56,8 @@ watch(isPickaxeCursorActive, (isActive) => {
 .body.pickaxe-cursor-active * {
     cursor: none;
 }
+
+.body.pickaxe-cursor-active main :deep(a) {
+    pointer-events: none;
+}
 </style>
