@@ -20,7 +20,7 @@ import NameTag from '../assets/images/NameTag.webp'
                 </div>
             </div>
             <MePic />
-            <div class="self-center col-start-1 col-end-3">
+            <div class="self-center col-start-1 col-end-3 pb-12">
                 <TechStack />
             </div>
             <div class="col-start-1 col-end-3 self-end">
