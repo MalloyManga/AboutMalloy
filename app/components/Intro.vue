@@ -10,7 +10,7 @@ import NameTag from '../assets/images/NameTag.webp'
 <template>
     <div class="back_board size-full pb-2">
         <div class="front_board p-4 grid grid-cols-[1fr_7.5rem]">
-            <div class="bg-pink-30 text-lg flex flex-col">
+            <div class="text-lg flex flex-col">
                 <div>
                     <img :src="NameTag" alt="Malloy" class="mc-icon size-8 inline-block">
                     Hi, I'm Malloy

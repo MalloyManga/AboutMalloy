@@ -20,7 +20,7 @@ watch(discordText, () => {
 
 <template>
     <div class="relative size-full">
-        <img :src="feather" class="mc-icon absolute z-20 inline-block size-10 bg-pink-30 right-2 -top-4">
+        <img :src="feather" class="mc-icon absolute z-20 inline-block size-10 right-2 -top-4">
         <div class="back_board size-full pb-2">
             <div class="front_board p-4">
                 <div>
