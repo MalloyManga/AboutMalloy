@@ -2,7 +2,6 @@
 <script setup lang="ts">
 const { isPickaxeCursorActive } = usePickaxeStage()
 
-// 为每个卡片创建一个破坏状态
 const cardStages = ref({
     intro: 0,
     now: 0,
