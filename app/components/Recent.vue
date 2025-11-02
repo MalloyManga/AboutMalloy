@@ -1,20 +1,9 @@
 <!-- components/Recent.vue -->
 <script setup lang="ts">
+import { RECENT_ACTIVITIES } from '~/constants/recent-activities'
 import Clock from '../assets/images/Clock.webp'
 
-interface RecentActivity {
-    time: string
-    activity: string
-    link?: string
-    nuxtLink?: string
-}
-
-const recentActivities: RecentActivity[] = [
-    { time: '2025/08/05', activity: 'MC render "Endless Dream"', nuxtLink: '/renders' },
-    { time: '2025/7/30', activity: 'Mc render "Nine of Swords"', nuxtLink: '/renders' },
-    { time: '2025/7/15', activity: 'Launch a costum-component-library', link: 'https://malloymanga.github.io/Custom-component-library/' },
-
-]
+const recentActivities = RECENT_ACTIVITIES
 
 </script>
 

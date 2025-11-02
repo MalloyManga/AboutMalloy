@@ -1,19 +1,20 @@
 <!-- Contact1.vue -->
 <script setup lang="ts">
+import { SOCIAL_LINKS } from '~/constants/social-links'
 import feather from '../assets/images/Feather.webp'
 
 const rotationAngle = ref<number>(0)
-const discordText = ref('malloyli')
+const discordText = ref<string>(SOCIAL_LINKS.discord)
 
 const handleDiscordClick = async () => {
-    await navigator.clipboard.writeText('malloyli')
+    await navigator.clipboard.writeText(SOCIAL_LINKS.discord)
     discordText.value = 'Copied!'
     rotationAngle.value += 360
 }
 
 watch(discordText, () => {
     setTimeout(() => {
-        discordText.value = 'malloyli'
+        discordText.value = SOCIAL_LINKS.discord
     }, 1000)
 })
 </script>
@@ -43,13 +44,14 @@ watch(discordText, () => {
                     I'm also active on these platforms:
                 </div>
                 <div class="flex gap-2">
-                    <a href="https://github.com/MalloyManga" target="_blank" class="inline-block">
+                    <a :href="SOCIAL_LINKS.github" target="_blank" class="inline-block" aria-label="GitHub Profile">
                         <IconGithub class="size-12" />
                     </a>
-                    <a href="https://okjk.co/6Gx97S" target="_blank" class="inline-block">
+                    <a :href="SOCIAL_LINKS.jike" target="_blank" class="inline-block" aria-label="Jike Profile">
                         <IconJike class="size-12" />
                     </a>
-                    <span class="group inline-block relative cursor-pointer" @click="handleDiscordClick">
+                    <span class="group inline-block relative cursor-pointer" @click="handleDiscordClick" 
+                        role="button" aria-label="Copy Discord username">
                         <IconDiscord class="size-12 transition-transform duration-500"
                             :style="{ transform: `rotate(${rotationAngle}deg)` }" />
                         <span

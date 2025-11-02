@@ -13,10 +13,17 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+
   app: {
     baseURL: '/AboutMalloy/',
     head: {
-      title: 'AboutMalloy',
+      title: 'AboutMalloy - A Front-end Developer Portfolio',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Personal portfolio of Malloy - A front-end developer who loves Web, Minecraft & manga' },
+        { name: 'author', content: 'Malloy' },
+      ],
       link: [
         { rel: 'icon', href: '/AboutMalloy/Malloy.ico' }
       ],

@@ -8,11 +8,15 @@ const { isPickaxeCursorActive, setIsPickaxeCursorActive } = usePickaxeStage()
 const cursorX = ref(0)
 const cursorY = ref(0)
 
-
 function updateCursorPosition(event: MouseEvent) {
     cursorX.value = event.clientX
     cursorY.value = event.clientY
 }
+
+// Cleanup event listener on component unmount
+onUnmounted(() => {
+    window.removeEventListener('mousemove', updateCursorPosition)
+})
 
 watch(isPickaxeCursorActive, (isActive) => {
     if (isActive) {
@@ -28,14 +32,15 @@ watch(isPickaxeCursorActive, (isActive) => {
         :class="{ 'pickaxe-cursor-active': isPickaxeCursorActive }">
 
         <img v-if="isPickaxeCursorActive" :src="DiamondPickaxe" alt="Pickaxe Cursor"
-            class="fixed z-50 size-9 pointer-events-none"
+            class="fixed z-50 size-9 pointer-events-none pixelated"
             :style="{ left: `${cursorX}px`, top: `${cursorY}px`, transform: 'translate(-50%, -50%)' }" />
 
         <header class="flex flex-col justify-between size-full">
             <Nav />
-            <McItemBar @click="setIsPickaxeCursorActive" class="cursor-pointer size-fit">
+            <McItemBar @click="setIsPickaxeCursorActive" class="cursor-pointer size-fit" 
+                role="button" aria-label="Toggle pickaxe cursor">
                 <template #item>
-                    <img v-if="!isPickaxeCursorActive" :src="DiamondPickaxe" alt="DiamondPickaxe" class="size-9">
+                    <img v-if="!isPickaxeCursorActive" :src="DiamondPickaxe" alt="DiamondPickaxe" class="size-9 pixelated">
                 </template>
             </McItemBar>
         </header>
