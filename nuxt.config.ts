@@ -15,9 +15,9 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: '/AboutMalloy/',
+    baseURL: '/',
     head: {
-      title: 'AboutMalloy - A Front-end Developer Portfolio',
+      title: 'Malloy - A Front-end Developer Portfolio',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,7 +25,7 @@ export default defineNuxtConfig({
         { name: 'author', content: 'Malloy' },
       ],
       link: [
-        { rel: 'icon', href: '/AboutMalloy/Malloy.ico' }
+        { rel: 'icon', href: '/Malloy.ico' }
       ],
     }
   }
