@@ -18,10 +18,10 @@ import Melon from '../assets/images/Melon.webp'
                 <img :src="Melon" alt="summer" class="mc-icon size-8 inline-block">
                 <ul class="inline-flex flex-col gap-2 mt-1">
                     <li>
-                        > Working on a project named EasyTailwind,a tool that helps Tailwind users save time
+                        > Working on a project named MangaReader, a tool to help manga lovers save time on language barriers.
                     </li>
                     <li>
-                        > Learning back-end
+                        > Imagining a Minecraft render about dreams and psychological trauma.
                     </li>
                 </ul>
             </div>
